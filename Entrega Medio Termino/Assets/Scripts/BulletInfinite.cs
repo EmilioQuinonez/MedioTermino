@@ -1,19 +1,19 @@
 using UnityEngine;
 
-public class BulletHeart : MonoBehaviour
+public class BulletInfinite : MonoBehaviour
 {
-    [Header("Heart Settings")]
-    [SerializeField] private float shootForce = 0.2f;
-    [SerializeField] private int bulletCount = 50;  
+    [Header("Infinity Settings")]
+    [SerializeField] private float shootForce = 5f;
+    [SerializeField] private int bulletCount = 200;
 
-    public void ShootHeart()
+    public void ShootInfinity()
     {
         for (int i = 0; i < bulletCount; i++)
         {
             float t = Mathf.PI * 2 * i / bulletCount;
 
-            float x = 16 * Mathf.Pow(Mathf.Sin(t), 3);
-            float y = 13 * Mathf.Cos(t) - 5 * Mathf.Cos(2 * t) - 2 * Mathf.Cos(3 * t) - Mathf.Cos(4 * t);
+            float x = Mathf.Cos(t) / (1 + Mathf.Pow(Mathf.Sin(t), 2));
+            float y = Mathf.Cos(t) * Mathf.Sin(t) / (1 + Mathf.Pow(Mathf.Sin(t), 2));
 
             Vector2 dir = new Vector2(x, y);
 

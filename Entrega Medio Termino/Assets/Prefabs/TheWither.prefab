@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7131490302540443720}
   - component: {fileID: 1650520383584612705}
+  - component: {fileID: -2849192839194956602}
   m_Layer: 0
   m_Name: TheWither
   m_TagString: Untagged
@@ -90,3 +91,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2849192839194956602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8081572722716607979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5089da1f621544346bbcd5628b69221f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Pattern
+  heartShooter: {fileID: 0}
+  starShooter: {fileID: 0}
+  infinityShooter: {fileID: 0}
+  patternDuration: 10
